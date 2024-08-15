@@ -20,6 +20,7 @@ The pinout of the HomePod's debug port, with the pod upside down, and you lookin
 | NC | TX | RX | CTRL | D+ | D- | GND |
 | NC | NC | NC | GND  | NC | NC | NC  |
 ```
+![pinout](debug.jpg)
 
 For USB and restoring software, you only need four probes connected to +5v, D+, D-, GND. 
 
@@ -41,3 +42,4 @@ You can also look at the UART console to possibly identify hardware failures pre
 # Warning
 
 If the wrong pins on your adapter touch the wrong pads on the homepod while there is power, it can cause hardware damage. Avoid by simply disconnecting power and usb from pod before removing the adapter from pod.
+
