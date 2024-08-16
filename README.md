@@ -9,6 +9,8 @@ This is a forked / modified repo of el1ng's and tihmstar's homepod adapters. I'v
 
 
 # Making It
+I hosted a livestream making some adapters if you want some visual reference, not really a guide: https://www.youtube.com/watch?v=fxdIzLTcSnA
+
 Download the .stl file depending on which probes you can get / have, load it into your preferred slicer, with the homepod side of the dongle facing up, and with support. Then print it!
 
 The pinout of the HomePod's debug port, with the pod upside down, and you looking down at the port, is as follows:
