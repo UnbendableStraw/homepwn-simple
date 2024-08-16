@@ -1,4 +1,4 @@
-# Simple HomePod USB / UART Adapter
+# Simple HomePod USB / UART Adapter (WORK IN PROGRESS)
 This is a forked / modified repo of el1ng's and tihmstar's homepod adapters. I've only made minor tweaks to the adapters, and refocused the README
 
 ## You Will Need
@@ -9,7 +9,7 @@ This is a forked / modified repo of el1ng's and tihmstar's homepod adapters. I'v
 
 
 # Making It
-Download the .stl file, load it into your preferred slicer, with the homepod side of the dongle facing up, and with support. Then print it!
+Download the .stl file depending on which probes you can get / have, load it into your preferred slicer, with the homepod side of the dongle facing up, and with support. Then print it!
 
 The pinout of the HomePod's debug port, with the pod upside down, and you looking down at the port, is as follows:
 
