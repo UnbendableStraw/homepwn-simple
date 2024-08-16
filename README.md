@@ -37,8 +37,11 @@ You can use this adapter to restore a software bricked first generation HomePod 
 
 You can also look at the UART console to possibly identify hardware failures preventing the software from operating. To do so;
 1. Find your USB UART adapter's address with
+
 `ls /dev/cu.*`
+
 2. "Screen" into your adapter (probably using baud rate 115200) with this, where `tty.usbserial-1` is the adapter you got from the previous command
+
 `screen /dev/tty.usbserial-1 115200`
 
 Tip: You can output your UART logs to a file while still being able to see the logs as they happen with `screen /dev/tty.usbserial-1 115200 > uartoutput.txt`
