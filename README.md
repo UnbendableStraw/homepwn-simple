@@ -18,7 +18,7 @@ The pinout of the HomePod's debug port, with the pod upside down, and you lookin
 ```
                 AC PORT
                   ^
-                  |
+                  
 | NC | TX | RX | CTRL | D+ | D- | GND |
 | NC | NC | NC | GND  | NC | NC | NC  |
 ```
