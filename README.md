@@ -46,7 +46,7 @@ You can also look at the UART console to possibly identify hardware failures pre
 
 `screen /dev/tty.usbserial-1 115200`
 
-Tip: You can output your UART logs to a file while still being able to see the logs as they happen with `screen /dev/tty.usbserial-1 115200 > uartoutput.txt`
+Tip: You can output your UART logs to a file while still being able to see the logs as they happen. After you enter your screen command, hit control-a, then H. It will output a screenlog.0 file you can rename to .txt
 
 # Warning
 
