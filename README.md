@@ -52,3 +52,7 @@ Tip: You can output your UART logs to a file while still being able to see the l
 
 If the wrong pins on your adapter touch the wrong pads on the homepod while there is power, it can cause hardware damage. Avoid by simply disconnecting power and usb from pod before removing the adapter from pod.
 
+# Give Up?
+
+I sell premade adapters! https://nicsfix.com/shop
+
