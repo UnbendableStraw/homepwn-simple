@@ -3,6 +3,8 @@ This is a forked / modified repo of el1ng's and tihmstar's homepod adapters. I'v
 
 Also included is my table stand. This can be used as a base to sit your homepod on when upside-down, to prevent scratches on the plastic top. It can also be used to protect the dongle when homepod is placed upright, to support USB Airplay
 
+I sell both of these if you don't want to try making them yourself: https://nicsfix.com/shop
+
 ## You Will Need
 * 4x M2x6 screws; to screw the adapter plate to the bottom of the homepod. You can tape it down if it is secure. The point is a SECURE connection. The screws that hold the circular plastic frame on top of the logic board work perfectly if you have any spares.
 * Pogo pins / test probes (P75-B1 or P75-E2)
@@ -56,5 +58,5 @@ If the wrong pins on your adapter touch the wrong pads on the homepod while ther
 
 # Give Up?
 
-I sell premade adapters! https://nicsfix.com/shop
+https://nicsfix.com/shop
 
