@@ -1,6 +1,8 @@
 # Simple HomePod USB / UART Adapter (WORK IN PROGRESS)
 This is a forked / modified repo of el1ng's and tihmstar's homepod adapters. I've only made minor tweaks to the adapters, and refocused the README
 
+Also included is my table stand. This can be used as a base to sit your homepod on when upside-down, to prevent scratches on the plastic top. It can also be used to protect the dongle when homepod is placed upright, to support USB Airplay
+
 ## You Will Need
 * 4x M2x6 screws; to screw the adapter plate to the bottom of the homepod. You can tape it down if it is secure. The point is a SECURE connection. The screws that hold the circular plastic frame on top of the logic board work perfectly if you have any spares.
 * Pogo pins / test probes (P75-B1 or P75-E2)
