@@ -34,10 +34,10 @@ ring_inner_diameter = 89; // Inner diameter of the ring
 ring_outer_diameter = 91; // Outer diameter of the ring (same as top_diameter)
 
 // Parameters for the cutout in the ring
-cutout_position_x = 10; // X position of the cutout center
-cutout_position_y = 0; // Y position of the cutout center
-cutout_width_in_ring = 4; // Width of the cutout
-cutout_height_in_ring = 3; // Height of the cutout
+cutout_position_x = 0; // X position of the cutout center
+cutout_position_y = 70; // Y position of the cutout center
+cutout_width_in_ring = 10; // Width of the cutout
+cutout_height_in_ring = 70; // Height of the cutout (increased to ensure full cut through)
 
 // Set number of facets for smoother cylinders
 $fn = 200; // Increases the number of segments to make the cylinder smooth
@@ -88,7 +88,7 @@ module ring() {
         // Cutout in the ring colored in orange
         color("orange")
             translate([cutout_position_x, cutout_position_y, 0]) // Position the cutout
-                cube([cutout_width_in_ring, cutout_height_in_ring, ring_height + 2], center = true); // Center the cutout
+                cube([cutout_width_in_ring, cutout_height_in_ring, ring_height + 5], center = true); // Ensure the cut goes through fully
     }
 }
 
