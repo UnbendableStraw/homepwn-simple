@@ -1,7 +1,7 @@
 // Parameters for the base
-base_z_height = 20; // Adjustable height of the base
-top_diameter = 91;
-bottom_diameter = 95;
+base_z_height = 15; // Adjustable height of the base
+top_diameter = 76;
+bottom_diameter = 92;
 wall_thickness = 1;
 cutout_width = 10;  // Width of the wire cutout (adjusted from diameter)
 cutout_length = 10;  // Length of the wire cutout
@@ -10,7 +10,7 @@ cutout_height = 20; // Depth of the cutout into the Z axis
 top_thickness = 0.6; // Thickness of the top surface
 
 // New parameter for adjustable base thickness
-base_thickness = 0.6; // Adjust this value to change the thickness of the base
+base_thickness = 0; // Adjust this value to change the thickness of the base
 
 // Parameters for the rectangular cutouts
 rect_cutout1_width = 40;  // Width of the first rectangular cutout
@@ -30,8 +30,8 @@ x_offset = -5; // Adjust this value for the X-axis offset
 // Parameters for the new ring
 ring_height = 4; // Height of the ring
 ring_thickness = 2; // Thickness of the ring
-ring_inner_diameter = 89; // Inner diameter of the ring
-ring_outer_diameter = 91; // Outer diameter of the ring (same as top_diameter)
+ring_inner_diameter = 73; // Inner diameter of the ring
+ring_outer_diameter = 76; // Outer diameter of the ring (same as top_diameter)
 
 // Parameters for the cutout in the ring
 cutout_position_x = 0; // X position of the cutout center
@@ -87,10 +87,70 @@ module ring() {
         
         // Cutout in the ring colored in orange
         color("orange")
-            translate([cutout_position_x, cutout_position_y, 0]) // Position the cutout
+            translate([cutout_position_x, cutout_position_y, 1]) // Position the cutout
                 cube([cutout_width_in_ring, cutout_height_in_ring, ring_height + 5], center = true); // Ensure the cut goes through fully
     }
 }
+// Parameters for the bottom ring (same as the top ring)
+bottom_ring_height = 5; // Height of the bottom ring
+bottom_ring_thickness = 2; // Thickness of the bottom ring
+bottom_ring_inner_diameter = 89; // Inner diameter of the bottom ring (same as ring_inner_diameter)
+bottom_ring_outer_diameter = 92; // Outer diameter of the bottom ring (same as bottom_diameter)
+
+// New bottom ring module
+module bottom_ring() {
+    difference() {
+        // Outer cylinder for the bottom ring colored in dark blue
+        color("darkblue")
+            cylinder(h = bottom_ring_height, r = bottom_ring_outer_diameter / 2);
+        
+        // Inner cylinder to create the hollow part of the ring colored in light gray
+        color("lightgray")
+            translate([0, 0, -1]) // Ensure the inner cut does not interfere with other features
+                cylinder(h = bottom_ring_height + 2, r = bottom_ring_inner_diameter / 2);
+                // Cutout in the ring colored in orange
+        color("orange")
+            translate([cutout_position_x, cutout_position_y, 1]) // Position the cutout
+                cube([cutout_width_in_ring, cutout_height_in_ring, ring_height + 5], center = true); // Ensure the cut goes through fully
+    }
+}
+// Parameters for text
+text_content = "Nic's Fix";  // The text to display
+font = "SF Pro Display:style=Bold"; 
+text_size = 6;  // Size of the text
+text_thickness = 1;  // Thickness of the text extrusion
+text_spacing = 1.2;  // Spacing between letters
+
+// Parameters for text position
+text_x_offset = 29;  // Offset for moving the text along the X-axis
+text_z_offset = 10;  // Adjustable Z-position for the text
+
+
+// Calculate the text width for centering
+text_width = text_spacing * (len(text_content) - 1) * text_size;
+
+// Call the bottom text module
+
+
+// Add mirrored text to the bottom of the object with adjustable Z-position
+
+toptext_z_offset = 15;  // Adjustable Z-position for the text
+module top_text() {
+    color("black")
+        translate([-(text_width / 2) + text_x_offset, -(text_size / 2), toptext_z_offset])  // Adjust X and Z positions
+    translate([0,-20,0])
+        linear_extrude(height = text_thickness)
+            text(text_content, size = text_size, spacing = text_spacing, halign = "center", valign = "center");
+}
+
+
+// Call the top text module
+top_text();
+
+
+// Call the bottom ring module at the bottom of the base
+translate([0, 0, -bottom_ring_height]) // Position the ring at the bottom of the base
+    bottom_ring();
 
 // Call the base module
 base();
@@ -98,3 +158,5 @@ base();
 // Call the ring module on top of the base
 translate([0, 0, base_z_height]) // Position the ring on top of the base
     ring();
+
+
