@@ -30,7 +30,7 @@ The pinout of the HomePod's debug port, with the pod upside down, and you lookin
 
 For USB and restoring software, you only need four probes connected to +5v, D+, D-, GND. 
 
-For UART, you need two more probes on the TX and RX, and one for GND. You can share the same GND from the USB line, or another marked GND pad, all the GND pads are internally connected. This is ONLY 1.8v, 3.3 or 5v can cause damage!
+For UART, you need two more probes on the TX and RX, and one for GND. You can share the same GND from the USB line, or another marked GND pad, all the GND pads are internally connected. This is ONLY 1.8v! 3.3 or 5v can cause damage.
  
 For the B1 probes, to avoid melting the 2d printed plastic adapter, solder wires to the pins, _then_ insert them into the adapter. Make sure they have a good solder connection, otherwise the USB connection will be very unstable or will not work at all.
 
