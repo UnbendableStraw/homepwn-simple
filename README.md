@@ -1,7 +1,7 @@
 # Simple HomePod USB / UART Adapter 
 This is a forked / modified repo of el1ng's and tihmstar's homepod adapters. I've modified them to fit different test probes, since the E2 probes tend to poke holes. 
 
-Also included is my table stand. This can be used as a base to sit your homepod on when upside-down, to prevent scratches on the plastic top. It can also be used to protect the dongle when homepod is placed upright, to support USB Airplay
+Also included is my table stand. This can be used as a base to sit your homepod on when upside-down, to prevent scratches on the plastic top. It can also be used to protect the dongle when homepod is placed upright, to support USB Airplay (since the adapter will stick out the bottom and not let the HomePod sit flat on a table)
 
 I sell both of these if you don't want to try making them yourself: https://nicsfix.com/shop
 
@@ -70,7 +70,7 @@ Observations so far:
 * Possibility of updates breaking / removing this functionality in the future...
 
 
-To use, you need to make or buy a USB adapter for your pod. Whatever you end up doing to get USB access to your HomePod will most likely stick out the bottom, so you need to raise the base of the pod to prevent damage to the adapter or debug port when placing it upright on a table. I have 3d printable adapters and stands you can make or buy here: https://github.com/UnbendableStraw/homepwn-simple/
+To use, you need to make or buy a USB adapter for your pod. Whatever you end up doing to get USB access to your HomePod will most likely stick out the bottom, so you need to raise the base of the pod to prevent damage to the adapter or debug port when placing it upright on a table. 
 
 Video Demos:
 * https://twitter.com/UnbendableStraw/status/1836576917077790951
@@ -79,5 +79,5 @@ Video Demos:
 
 # Give Up?
 
-https://nicsfix.com/shop
+You can buy premade adapters, stands, and docks here https://nicsfix.com/shop
 
