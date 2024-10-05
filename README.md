@@ -61,9 +61,10 @@ If the wrong pins on your adapter touch the wrong pads on the homepod while ther
 First-generation Apple HomePods have Airplay capability over USB. This is still Airplay, with all it's pros / cons, just over USB. 
 
 Observations so far:
-* Only seems to work on Macs
-* Only seems to work if the HomePod is already set-up. Does not work on a HomePod in Setup Mode
-* Does not seem to work if the HomePod was configured as a Default Output for an Apple TV
+* Only seems to work with Macs
+* Only works if the HomePod is already set-up / Does not work on a HomePod in Setup Mode
+* Does not work if the HomePod was configured as a Default Output for an Apple TV
+* Needs at least least HomePod Version 14.0? 13.X did not work, so I assume older versions also won't work
 * Can play to multiple HomePods via USB (plus other Airplay 2 speakers)(using "Airfoil" by Rogue Amoeba)
 * Stereo pairs (i.e. playing to a stereo pair pod via USB does not transmit to it's paired pod. Can still use Airfoil for multiple)
 * USB Ethernet adapters, even powered ones, by themselves do not appear to work with the HomePod.
