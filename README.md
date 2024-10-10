@@ -9,7 +9,7 @@ I sell both of these if you don't want to try making them yourself: https://nics
 * 4x M2x6 screws; to screw the adapter plate to the bottom of the homepod. You can tape it down if it is secure. The point is a SECURE connection. The screws that hold the circular plastic frame on top of the logic board work perfectly if you have any spares.
 * Pogo pins / test probes (P75-B1 or P75-E2)
 * USB cable to solder to test probes
-* If using UART, spare wire to solder to UART test probes, and a USB to **1.8v** UART serial adapter.
+* If using UART, spare wire to solder to UART test probes, and a USB to **1.8v** UART serial adapter. Recommended to use an adapter with a genuine FTDI chip, like the "DSD TECH SH-U09C5".
 
 
 # Making It
