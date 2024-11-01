@@ -1,5 +1,5 @@
 # Simple HomePod USB / UART Adapter 
-This is a forked / modified repo of el1ng's and tihmstar's homepod adapters. I've modified them to fit different test probes, since the E2 probes tend to poke holes. 
+This is a forked / modified repo of el1ng's and tihmstar's homepod adapters. I've modified it to fit different test probes since the E2/B1 probes tend to poke holes. I reverted the shape  of the adapter back to a circle. The alignment tabs are now properly aligned and enabled. The screw holes are now properly lined up. The location of the pin holes also needed slight tweaking, and by widening the width of the pin box it makes a perfect fit!
 
 Also included is my table stand. This can be used as a base to sit your homepod on when upside-down, to prevent scratches on the plastic top. It can also be used to protect the dongle when homepod is placed upright, to support USB Airplay (since the adapter will stick out the bottom and not let the HomePod sit flat on a table)
 
@@ -7,7 +7,7 @@ I sell both of these if you don't want to try making them yourself: https://nics
 
 ## You Will Need
 * 4x M2x6 screws; to screw the adapter plate to the bottom of the homepod. You can tape it down if it is secure. The point is a SECURE connection. The screws that hold the circular plastic frame on top of the logic board work perfectly if you have any spares.
-* Pogo pins / test probes (P75-B1 or P75-E2)
+* Pogo pins / test probes (I recommend P75-D2 or P75-J1, I do not recommend the E2 or B1 needle probes, they will poke holes in your pads)
 * USB cable to solder to test probes
 * If using UART, spare wire to solder to UART test probes, and a USB to **1.8v** UART serial adapter. Recommended to use an adapter with a genuine FTDI chip, like the "DSD TECH SH-U09C5".
 
