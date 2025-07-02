@@ -15,7 +15,9 @@ I sell both of these if you don't want to try making them yourself: https://nics
 # Making It
 I hosted a livestream making some adapters if you want some visual reference, not really a guide: https://www.youtube.com/watch?v=fxdIzLTcSnA
 
-Download the .stl file depending on which probes you can get / have, load it into your preferred slicer, with the homepod side of the dongle facing up, and with support. Then print it!
+Download the Table_Dock_v1.1.1, load it into your preferred slicer, with the homepod side of the dongle facing up, and with support. Then print it!
+
+As shown in the livestream, push the pins into the adapter until the tube of the pogo pin is flush with the adapter.
 
 The pinout of the HomePod's debug port, with the pod upside down, and you looking down at the port, is as follows:
 
@@ -32,9 +34,9 @@ For USB and restoring software, you only need four probes connected to +5v, D+, 
 
 For UART, you need two more probes on the TX and RX, and one for GND. You can share the same GND from the USB line, or another marked GND pad, all the GND pads are internally connected. This is ONLY 1.8v! 3.3 or 5v can cause damage.
  
-For the B1 probes, to avoid melting the 2d printed plastic adapter, solder wires to the pins, _then_ insert them into the adapter. Make sure they have a good solder connection, otherwise the USB connection will be very unstable or will not work at all.
+If you're using probes like the E2 probes, you won't be able to fit the probes in with wires attached, so you'll have to insert the pins into the adapter first, then solder the wires onto them. 
 
-If you're using the E2 probes, you won't be able to fit the probbes in with wires attached, so you'll have to insert the pins into the adapter first, then solder the wires onto them. Minimize the amount of time you are heating the pins to avoid melting the plastic adapter
+
 
 
 # Using It
